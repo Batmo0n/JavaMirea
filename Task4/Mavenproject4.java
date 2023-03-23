@@ -5,11 +5,12 @@
 package com.mireatest.mavenproject4;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 /**
  *
- * @author Ya
+ * @author user
  */
 public class Mavenproject4 {
 
@@ -63,11 +64,14 @@ public class Mavenproject4 {
                     {
                         System.out.println("What serial? ");
                         String serial = myObj.nextLine();
+                        ArrayList<Telephone> tempList = new ArrayList<Telephone>(list);
                         for (Telephone phone: list){
                             if (serial.equals(phone.getSerial())){
-                                list.remove(phone);
+                                tempList.remove(phone);
                             }
-                        }       break;
+                        }
+                        list=tempList;
+                        break;
                     }
                 case "clear":
                     list.clear();

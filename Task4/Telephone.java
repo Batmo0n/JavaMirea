@@ -6,7 +6,7 @@ package com.mireatest.mavenproject4;
 
 /**
  *
- * @author Ya
+ * @author user
  */
 public class Telephone {
     private String model;
@@ -29,7 +29,6 @@ public class Telephone {
     public void setColor(String color) {
         this.color = color;
     }
-
     public String getSerial() {
         return serial;
     }
@@ -49,8 +48,4 @@ public class Telephone {
     public String toString() {
         return model + " " + color + " " + serial + " " + mobile;
     }
-    
-
-    
 }
-
