@@ -5,7 +5,6 @@
 package com.mireatest.mavenproject4;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -64,7 +63,7 @@ public class Mavenproject4 {
                     {
                         System.out.println("What serial? ");
                         String serial = myObj.nextLine();
-                        ArrayList<Telephone> tempList = new ArrayList<Telephone>(list);
+                        ArrayList<Telephone> tempList = new ArrayList<>(list);
                         for (Telephone phone: list){
                             if (serial.equals(phone.getSerial())){
                                 tempList.remove(phone);
