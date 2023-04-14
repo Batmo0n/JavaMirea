@@ -26,7 +26,7 @@ class Student extends Thread {
             System.out.println("Student" + id + " waiting");
              sem.acquire();
             System.out.println("Student" + id + " eating");
-            Thread.sleep(1000);
+            Thread.sleep(3000);
             System.out.println("Student" + id + " exiting");
             sem.release();
             
